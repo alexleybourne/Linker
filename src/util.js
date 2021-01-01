@@ -61,6 +61,16 @@ function chillHop() {
       id: uuidv4(),
       active: false,
     },
+    {
+        name: "Velocities",
+        cover:
+          "https://chillhop.com/wp-content/uploads/2020/07/9e04907d0cf68c974c4a5f530b082a8d83a2d41f-1024x1024.jpg",
+        artist: "Sleepy Fish",
+        audio: "https://mp3.chillhop.com/serve.php/?mp3=7966",
+        color: ["#1B3356", "#6BB4C9"],
+        id: uuidv4(),
+        active: false,
+      },
     //ADD MORE HERE
   ];
 }
