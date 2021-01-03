@@ -1,7 +1,6 @@
-import { useRef, useState } from 'react'
 import LibrarySong from './LibrarySong'
 
-const Library = ({songs, setCurrentSong}) => {
+const Library = ({songs, setCurrentSong, audioRef, isPlaying}) => {
 
     return (
         <div className="library">
@@ -13,6 +12,8 @@ const Library = ({songs, setCurrentSong}) => {
                         song={song}
                         setCurrentSong={setCurrentSong}
                         key={song.id}
+                        audioRef={audioRef}
+                        isPlaying={isPlaying}
                     />
                 ))}
             </div>
