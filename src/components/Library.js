@@ -1,6 +1,6 @@
 import LibrarySong from './LibrarySong'
 
-const Library = ({songs, setCurrentSong, audioRef, isPlaying}) => {
+const Library = ({songs, setSongs, setCurrentSong, audioRef, isPlaying}) => {
 
     return (
         <div className="library">
@@ -14,6 +14,7 @@ const Library = ({songs, setCurrentSong, audioRef, isPlaying}) => {
                         key={song.id}
                         audioRef={audioRef}
                         isPlaying={isPlaying}
+                        setSongs={setSongs}
                     />
                 ))}
             </div>
